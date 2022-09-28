@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  server:
+    env_file:
+        "./server/server.env"
+    build:
+      context: ./server
+      dockerfile: ./Dockerfile
+    image: "matteogrellier/ouivaloproject/backend"
+    ports:
+      - "5000:5000"
+  frontend:
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile
+    image: "matteogrellier/ouivaloproject/frontend"
+    ports:
+      - "3000:3000"
+    links:
+      - "server:be"

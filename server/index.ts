@@ -16,8 +16,6 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');
 });
 
-
-// Post request to https://script.google.com/macros/s/AKfycby-TJmFFUFTfiNUbMoSIZx8LVtiskQ-bUt4xO6hmrU0XQpJS8IPUBow/exec and get response
 app.post('/api', (req: Request, res: Response) => {
   const { id, date, urlRelais, message } = req.body;
   const data = {
