@@ -1,0 +1,18 @@
+.containerDiv {
+  display:flex; width: 100%; justify-content: center; height: 100vh; align-items: center;
+}
+.formDiv{
+  width:500px; display: flex; justify-content: center; height: fit-content;
+}
+
+.submitButton{
+  height: 100px; display: flex; align-items: center; justify-content: center;
+}
+
+.textArea{
+  resize: vertical;
+}
+
+.formulaire{
+  width: 100%;
+}
